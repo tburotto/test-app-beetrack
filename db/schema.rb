@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_03_21_010905) do
   create_table "tracks", force: :cascade do |t|
     t.float "latitude"
     t.float "longitude"
-    t.string "send_at"
+    t.datetime "send_at"
     t.bigint "vehicle_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
