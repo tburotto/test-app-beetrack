@@ -38,9 +38,10 @@
     }).addTo(mymap);
 
 </script>
+
 <% @result.each do |result|%>
           <script >
             L.marker([<%= result[1].latitude%>, <%= result[1].longitude %>]).addTo(mymap)
               .bindPopup('<b>Matricula: <%=result[0].identifier%></b> <br> <b> Fecha y hora: <%= result[1].send_at %></b>').openPopup();
           </script>
-          <%  end %>
+<%  end %>

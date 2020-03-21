@@ -1,3 +1,5 @@
+require 'date'
+
 class Api::V1::GpsController < ApplicationController
     protect_from_forgery with: :null_session
 
@@ -8,7 +10,6 @@ class Api::V1::GpsController < ApplicationController
     end
 
     def create
-        require 'date'
         @vehicle = Vehicle.where(identifier: params[:vehicle_identifier]).first
         if @vehicle == nil
             @vehicle = Vehicle.create(identifier: params[:vehicle_identifier])
