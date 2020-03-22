@@ -27,4 +27,4 @@ Se creó una vista en la ruta /show para mostrar la última posición GPS introd
 Existen dos controladores dentro de la app en RoR. El primero dentro de la carpeta api/v1/gps se encarga de manejar el backend de la API. Para esto estan los metodos index y create. Index controla el método GET de la API. Crate controla el metodo POST de la API. El segundo controlador es show. Este envía los datos necesarios para la vista que despliega los puntos GPS en el mapa. Solo posee el método index que busca todos los vehiculos y el último track GPS por vehículo existente. 
 
 ## Producción
-La aplicación fue montada en ambiente de producción usando heroku: 
+La aplicación fue montada en ambiente de producción usando heroku: https://whispering-harbor-60707.herokuapp.com/show
