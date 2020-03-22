@@ -1,6 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <center> <h2> Localización de Vehículos </h2> </center>
+    <%= link_to 'Recargar', show_path, class: "btn btn-info pull-right" %>
   </div>
 </div>
 <div class="container-fluid">
@@ -16,9 +17,9 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h4> Vehiculos disponibles </h4>
+                    <h4> Vehículos disponibles </h4>
                     <% @result.each do |vehicle| %>
-                        <p> Matricula: <%= vehicle[0].identifier %> </p>
+                        <p> Matrícula: <%= vehicle[0].identifier %> </p>
                     <% end %>
                 </div>
             </div>
@@ -42,6 +43,6 @@
 <% @result.each do |result|%>
           <script >
             L.marker([<%= result[1].latitude%>, <%= result[1].longitude %>]).addTo(mymap)
-              .bindPopup('<b>Matricula: <%=result[0].identifier%></b> <br> <b> Fecha y hora: <%= result[1].send_at %></b>').openPopup();
+              .bindPopup('<b>Matrícula: <%=result[0].identifier%></b> <br> <b> Fecha y hora: <%= result[1].send_at %></b>').openPopup();
           </script>
 <%  end %>
