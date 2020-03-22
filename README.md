@@ -3,7 +3,7 @@
 Esta app fue hecha con el objetivo de demostrar conocimientos en RoR. Esta simple app permite entrar ubicaciones GPS por vehículos segun su matricula. Estos se despliegan en un mapa en la ruta /show.
 
 ## Versiones de Ruby y Rails
-Esta app está basada en ruby 2.6.3 y rails 6.0.
+Esta app está basada en ruby 2.6.3 y rails 6.0.2
 
 ## Modelo
 La base de datos se configuró en PostgreSQL. Existen dos entidades principales que se relacionan 1:N. Estados entidades son las siguientes:
@@ -31,3 +31,6 @@ La aplicación fue montada en ambiente de producción usando heroku: https://whi
 
 ## GIT
 La aplicación fue desarrollada usando GIT, para esto se uso la rama master desde la cual se crearon subramas para cada feature de la app. Los commit siguen la guia de estilo usando git emoji commit. Se usó GitHub para almacenar el código remotamente. El link del repositorio es: https://github.com/tburotto/test-app-beetrack
+
+## Instalación
+Es necesario para usar localmente esta app en primer lugar tener instalado ruby 2.6.3 y rails 6.0.2. Luego es necesario usar yarn para instalar componentes node para esto correr el comando yarn install. Luego es necesario crear la base de datos usando rails db:create, a continuación debemeos correr las migraciones usando rails db:migrate en consola. Finalmente corremos el servidor de rails usando rails s. Nos dirigimos a localhost:3000/show para visualizar la vista del mapa.
