@@ -1,9 +1,9 @@
-# Prueba Tecnica Beetrack - Tomas Burotto
+# Prueba Técnica Beetrack - Tomás Burotto
 
 Esta app fue hecha con el objetivo de demostrar conocimientos en RoR. Esta simple app permite entrar ubicaciones GPS por vehículos segun su matricula. Estos se despliegan en un mapa en la ruta /show.
 
-## Versiones
-Esta app está basada en ruby 2.6.3 y rails 6.0
+## Versiones de Ruby y Rails
+Esta app está basada en ruby 2.6.3 y rails 6.0.
 
 ## Modelo
 La base de datos se configuró en PostgreSQL. Existen dos entidades principales que se relacionan 1:N. Estados entidades son las siguientes:
