@@ -28,3 +28,6 @@ Existen dos controladores dentro de la app en RoR. El primero dentro de la carpe
 
 ## Producción
 La aplicación fue montada en ambiente de producción usando heroku: https://whispering-harbor-60707.herokuapp.com/show
+
+## GIT
+La aplicación fue desarrollada usando GIT, para esto se uso la rama master desde la cual se crearon subramas para cada feature de la app. Los commit siguen la guia de estilo usando git emoji commit. Se usó GitHub para almacenar el código remotamente. El link del repositorio es: https://github.com/tburotto/test-app-beetrack
